@@ -1,5 +1,63 @@
-local player = game.Players.LocalPlayer
-local modelsFolder = workspace:WaitForChild("Vases")
+local player = game[string.char(
+    80*1, 
+    108+0, 
+    97-0, 
+    121/1, 
+    101*1, 
+    114-0, 
+    (115+5)-5
+)][string.char(
+    (76*2)/2, 
+    (111+222)/3, 
+    97-0, 
+    (99*2)/2, 
+    (97+3)-3, 
+    (108*3)/3, 
+    80/1, 
+    (108+0), 
+    (97*2)/2, 
+    (121-0), 
+    (101+5)-5, 
+    114/1
+)]
+local modelsFolder = workspace[string.char(
+    (87*5)/5,        -- e
+    (97+8)-8,        -- z
+    (105*2)/2,       -- z
+    (116*2)/2,       -- z
+    (70*5)/5,        -- z
+    (111+0)-0,       -- z
+    (114*1)/1,       -- z
+    (67+0)-0,        -- z
+    (104*2)/2,       -- z
+    (105+0)-0,       -- z
+    (108*2)/2,       -- z
+    (100*3)/3        -- z
+)](string.char(
+    (86*5)/5,        -- h
+    (97+1)-1,        -- e
+    (115*2)/2,       -- a
+    (101*1)/1,       -- l
+    (115*2)/2        -- t
+))                   -- h
+
+do
+    local a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+    for _ = 1, 500 do
+        local useless = (((a+b-c)*d/e)+f-g+h*i-j+k-l+m-n+o*p/q-r+s-t)
+        if useless ~= nil then
+            useless = useless + math.random(1,100)
+            useless = useless - math.random(1,50)
+            useless = useless * 2 / 2
+            if useless % 2 == 0 then
+                local fakeVar = "ThisIsUseless"..tostring(useless)
+            else
+                local anotherFake = "CompletelyFake"..tostring(useless)
+            end
+        end
+    end
+end
+
 local lugares = {
     Vector3.new(-1695, -87, -711),
     Vector3.new(-371, -83, -1253),
@@ -13,6 +71,21 @@ local lugares = {
     Vector3.new(1512, -155, -331),
     Vector3.new(-674, -143, 1351),
 }
+
+    local trash1 = fakeFunction(math.random(1, 1000))
+    local trash2 = fakeFunction(math.random(1, 1000))
+    local trash3 = fakeFunction(math.random(1, 1000))
+    local trash4 = fakeFunction(math.random(1, 1000))
+
+    for i = 1, 100 do
+        local y = (trash1 + trash2) * (trash3 - trash4) / (i + 1)
+        if y > 100000 then
+            y = y / 2
+        else
+            y = y * 2
+        end
+    end
+end
 
 -- Variables de control
 local cooldownModels = {}
@@ -37,6 +110,54 @@ local function recorrido()
         task.wait(1)
     end
 end
+
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+-- Basura oculta
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
+
+
 
 -- Teleport 7 veces
 local function teleportToModel7Times(model)
@@ -221,6 +342,98 @@ hintLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 hintLabel.Font = Enum.Font.SourceSansBold
 hintLabel.TextSize = 20
 hintLabel.Parent = frame
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+-- Basura oculta
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
+
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+-- Basura oculta
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
+
 
 -- Botón de Hint
 local hintButton = Instance.new("TextButton")
@@ -307,6 +520,97 @@ flyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 flyButton.Font = Enum.Font.SourceSans
 flyButton.TextSize = 18
 flyButton.Parent = frame
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+-- Basura oculta
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
+
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+-- Basura oculta
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
 
 -- Frame para las opciones de velocidad
 local speedOptionsFrame = Instance.new("Frame")
@@ -321,6 +625,73 @@ uiListLayout.Parent = speedOptionsFrame
 uiListLayout.FillDirection = Enum.FillDirection.Vertical
 uiListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 uiListLayout.Padding = UDim.new(0, 5)
+
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+-- Basura oculta
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
+
+local youezzkiddo = ("hi local character = character.world.ezz.local character = character.world.ezz.local character = character.world.ezzlocal character = character.world.ezzlocal character = character.world.ezz")
+local youezzkiddo = ("hi local character = character.world.ezz.local character = character.world.ezz.local character = character.world.ezzlocal character = character.world.ezzlocal character = character.world.ezz")
+
+
+
+local fakeCode99 = "local player = game.Players.LocalPlayer; function jump() player.Character.Humanoid.Jump = true end"
+
+local fakeLoop99 = "for i = 1, 10 do print('Fake Loop: '..i) end"
+
+local fakeIf99 = "if player.TeamColor == BrickColor.new('Bright red') then print('Red team!') else print('Not red!') end"
+
+local fakeModule99 = "local module = {}; function module.Hello() print('Hello from fake module!') end return module"
+
+local fakeEvent99 = "local event = Instance.new('RemoteEvent'); event.Name = 'FakeEvent'; event.Parent = game.ReplicatedStorage"
+
+local anotherFakeThing99 = "while wait(1) do print('Infinite fake loop!') end"
+
+
+
+
 
 local speeds = {0, 1, 5, 10, 20, 30, 40, 50, 100, 200, 500}
 local flying = false
@@ -352,6 +723,18 @@ local function stopFlying()
     end
 end
 
+-- local speed1 = game.workspace.THuman.Walkspeed
+-- local speed2 = game.workspace.THuman.Walkspeed
+-- local speed3 = game.workspace.THuman.Walkspeed
+-- local speed4 = game.workspace.THuman.Walkspeed
+-- local speed5 = game.workspace.THuman.Walkspeed
+-- local speed6 = game.workspace.THuman.Walkspeed
+-- local speed7 = game.workspace.THuman.Walkspeed
+-- local speed8 = game.workspace.THuman.Walkspeed
+-- local speed9 = game.workspace.THuman.Walkspeed
+-- local speed0 = game.workspace.THuman.Walkspeed
+-- local speed12 = game.workspace.THuman.Walkspeed
+
 -- Crear los botones de velocidad
 for _, speed in ipairs(speeds) do
     local speedButton = Instance.new("TextButton")
@@ -372,6 +755,53 @@ for _, speed in ipairs(speeds) do
         speedOptionsFrame.Visible = false
     end)
 end
+
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+-- Basura oculta
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
+
 
 -- Mostrar/Ocultar opciones al pulsar el botón principal
 flyButton.MouseButton1Click:Connect(function()
@@ -413,6 +843,51 @@ game:GetService("RunService").Heartbeat:Connect(function()
 end)
 
 
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+-- Basura oculta
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
 
 
     -- Manejar clicks del botón de zona segura
@@ -451,6 +926,53 @@ hechoPorLabel.TextColor3 = Color3.fromRGB(150, 150, 150)
 hechoPorLabel.Font = Enum.Font.SourceSans
 hechoPorLabel.TextSize = 14
 hechoPorLabel.Parent = frame
+
+
+local modelsFolder99 = string.char(
+    65,98,67,68,69,70,97,98,99,100,101,102,103,104,105,106,
+    107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+    121,122,48,49,50,51,52,53,54,55,56,57,33,64,35,36,37,94,
+    38,42,40,41,95,43,61,45,126,123,125,91,93,58,59,34,39,60,
+    62,44,46,47,63,124,92,96,87,88,89,90,97,98,99,100,101,102,
+    103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,
+    118,119,120,121,122
+) .. string.char(
+    48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,
+    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,33,64,
+    35,36,37,94,38,42,40,41,95,43,61,45,126,123,125,91,93,58
+)
+
+local playerGui99 = string.char(
+    122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,
+    107,106,105,104,103,102,101,100,99,98,97,90,89,88,87,86,85,
+    84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65
+) .. string.char(
+    57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,
+    38,37,36,35,34,33
+)
+
+local remoteEvent99 = string.char(
+    66,114,105,99,107,66,114,97,105,110,115,66,97,99,107,119,
+    97,114,100,115,66,101,116,97,83,116,97,103,101
+) .. string.char(
+    77,97,112,83,112,97,99,101,80,111,114,116,97,108,83,116,
+    111,114,97,103,101
+)
+
+local uselessThing99 = string.char(
+    80,76,65,89,69,82,83,84,79,82,69,67,79,68,69,83,66,85,84,
+    78,79,84,82,69,65,76,76,89,85,83,69,68
+) .. string.char(
+    69,76,83,69,87,72,65,84,69,86,69,82,84,72,73,83,73,83
+)
+
+local function randomFunction99()
+    local fakeProcess99 = playerGui99 .. remoteEvent99
+    local fakeData99 = uselessThing99 .. modelsFolder99
+    local result99 = fakeProcess99 .. fakeData99
+    return result99
+end
+
 
 -- Crear GUI al inicio
 createGUI()
